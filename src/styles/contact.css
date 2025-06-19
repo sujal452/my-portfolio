@@ -1,0 +1,81 @@
+.contact-section {
+  padding: 100px 60px;
+  background-color: #f9f9f9;
+  color: #111;
+  text-align: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+.contact-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.contact-description {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.contact-details p {
+  font-size: 1rem;
+  margin: 12px 0;
+  color: #333;
+}
+
+.contact-details a {
+  color: #007bff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+/* 🌙 DARK MODE */
+.dark .contact-section {
+  background-color: #1e1e1e;
+  color: #eee;
+}
+
+.dark .contact-title {
+  color: #00bfff;
+}
+
+.dark .contact-description {
+  color: #ccc;
+}
+
+.dark .contact-details p {
+  color: #ddd;
+}
+
+.dark .contact-details a {
+  color: #66d9ff;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 60px 20px;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-description {
+    font-size: 1rem;
+  }
+
+  .contact-details p {
+    font-size: 0.95rem;
+  }
+}

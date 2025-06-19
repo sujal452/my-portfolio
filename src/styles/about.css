@@ -1,0 +1,55 @@
+.about-section {
+  background-color: #ffffff;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 60px;
+  text-align: center;
+  transition: background 0.4s, color 0.4s;
+}
+
+.about-container {
+  max-width: 800px;
+}
+
+.about-container h2 {
+  font-size: 2.8rem;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* 🌙 DARK MODE */
+.dark .about-section {
+  background-color: #181818;
+  color: #eee;
+}
+
+.dark .about-container h2 {
+  color: #00bfff;
+}
+
+.dark .about-container p {
+  color: #ccc;
+}
+
+/* 📱 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 80px 20px;
+  }
+
+  .about-container h2 {
+    font-size: 2rem;
+  }
+
+  .about-container p {
+    font-size: 1rem;
+  }
+}

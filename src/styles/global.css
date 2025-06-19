@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+/* 🔥 Dark mode base */
+.dark body {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+section {
+  padding: 100px 60px;
+}
+
+/* Heading styles */
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.dark h2 {
+  color: #00bfff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+/* Already existing */
+section {
+  padding: 100px 60px;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 80px 20px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  body {
+    font-size: 16px;
+  }
+}
