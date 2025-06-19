@@ -3,13 +3,13 @@ import React, { useState } from 'react';
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  return (
-    <nav className={`navbar ${menuOpen ? 'open' : ''}`}>
-      <div className="logo">Sujal</div>
+  const handleToggle = () => {
+    setMenuOpen(!menuOpen);
+  };
 
-      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-        ☰
-      </div>
+  return (
+    <nav className="navbar">
+      <div className="logo">Sujal</div>
 
       <div className={`nav-links ${menuOpen ? 'active' : ''}`}>
         <a href="#hero" onClick={() => setMenuOpen(false)}>Home</a>
@@ -17,10 +17,13 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         <a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a>
         <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
         <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
-
         <button className="toggle-btn" onClick={() => setDarkMode(!darkMode)}>
           {darkMode ? '🌞' : '🌙'}
         </button>
+      </div>
+
+      <div className="hamburger" onClick={handleToggle}>
+        ☰
       </div>
     </nav>
   );

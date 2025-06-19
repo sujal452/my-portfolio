@@ -54,3 +54,107 @@ section {
     font-size: 16px;
   }
 }
+/* Ensure padding below fixed navbar */
+main {
+  margin-top: 80px;
+}
+
+/* Optional global resets */
+body, html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg, #fff);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text, #333);
+}
+
+.toggle-btn {
+  margin-left: 10px;
+  background: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  padding: 6px 8px;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: var(--text, #000);
+}
+
+/* MOBILE MENU */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: var(--bg, white);
+    gap: 15px;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Dark Mode Support */
+.dark .navbar {
+  background-color: #1f1f1f;
+}
+
+.dark .logo {
+  color: #00bfff;
+}
+
+.dark .nav-links a {
+  color: #eee;
+}
+
+.dark .nav-links a:hover {
+  color: #00bfff;
+}
+main {
+  margin-top: 90px; /* Adjust according to navbar height */
+}

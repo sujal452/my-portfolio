@@ -4,15 +4,17 @@ import '../styles/projects.css';
 
 const Projects = () => {
   return (
-    <section id="projects" className="projects-section" data-aos="fade-up">
-      <h2 className="section-title">Projects</h2>
+    <section id="projects" className="projects-section">
+      <h2 className="section-title" data-aos="fade-up">Projects</h2>
+
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div
             key={index}
             className="project-card"
-            data-aos="zoom-in-up"
-            data-aos-delay={index * 200}
+            data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}
+            data-aos-delay={index * 150}
+            data-aos-duration="10000"
           >
             <img src={project.image} alt={project.title} className="project-img" />
             <h3>{project.title}</h3>

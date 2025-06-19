@@ -3,7 +3,7 @@ import '../styles/contact.css'; // Make sure this is imported
 
 const Contact = () => {
   return (
-    <section id="contact" className="contact-section">
+<section id="contact" className="contact-section" data-aos="fade-up">
       <div className="contact-container">
         <h2 className="contact-title">Get In Touch</h2>
         <p className="contact-description">

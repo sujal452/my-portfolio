@@ -3,7 +3,7 @@ import '../styles/footer.css';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+<footer className="footer" data-aos="fade-up" data-aos-offset="50">
       <div className="footer-content">
         <p>© {new Date().getFullYear()} <strong>Sujal Dhiman</strong>. All rights reserved.</p>
         <div className="footer-links">
