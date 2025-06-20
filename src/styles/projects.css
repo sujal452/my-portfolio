@@ -93,3 +93,13 @@
     font-size: 2rem;
   }
 }
+.status-tag {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #ffc107;
+  color: #222;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  font-weight: bold;
+}

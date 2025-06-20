@@ -25,6 +25,21 @@ export const skills = [
 
 
 
+export const upcomingProjects = [
+  {
+    title: 'AI Blog Writer',
+    description: 'An AI-powered tool to write SEO-optimized blog posts.',
+    status: 'In Progress',
+  },
+  {
+    title: 'E-commerce Dashboard',
+    description: 'Admin panel to manage orders, products, and users.',
+    status: 'Planned',
+  },
+];
+
+
+
 // import project2 from './assets/project2.png'; // comment this if file not found
 
 export const projects = [
