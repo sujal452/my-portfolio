@@ -158,3 +158,13 @@ body, html {
 main {
   margin-top: 90px; /* Adjust according to navbar height */
 }
+:root {
+  --bg: #ffffff;
+  --text: #222222;
+  --card: #f8f8f8;
+}
+.dark {
+  --bg: #121212;
+  --text: #eeeeee;
+  --card: #1e1e1e;
+}

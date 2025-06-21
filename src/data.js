@@ -11,16 +11,22 @@ import gitLogo from './assets/git.png';
 import githubLogo from './assets/github.png';
 import responsiveLogo from './assets/responsive.png';
 import vscodeLogo from './assets/vscode.png';
-
+import nodeLogo from './assets/node.png';
+import figmaLogo from './assets/figma.png';
+export const learning = [
+  { name: 'Node.js', icon: nodeLogo },
+  { name: 'Figma', icon: figmaLogo },
+  // Add more if needed
+];
 export const skills = [
-  { name: 'HTML5', icon: htmlLogo },
-  { name: 'CSS3', icon: cssLogo },
-  { name: 'JavaScript', icon: jsLogo },
-  { name: 'React', icon: reactLogo },
-  { name: 'Git', icon: gitLogo },
-  { name: 'GitHub', icon: githubLogo },
-  { name: 'Responsive Design', icon: responsiveLogo },
-  { name: 'VS Code', icon: vscodeLogo },
+  { name: 'HTML5', icon: htmlLogo, level: '95%' },
+  { name: 'CSS3', icon: cssLogo, level: '90%' },
+  { name: 'JavaScript', icon: jsLogo, level: '85%' },
+  { name: 'React', icon: reactLogo, level: '80%' },
+  { name: 'Git', icon: gitLogo, level: '75%' },
+  { name: 'GitHub', icon: githubLogo, level: '80%' },
+  { name: 'Responsive Design', icon: responsiveLogo, level: '90%' },
+  { name: 'VS Code', icon: vscodeLogo, level: '85%' },
 ];
 
 
