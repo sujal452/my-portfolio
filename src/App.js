@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
 import './styles/global.css';
 import './styles/hero.css';
 import './styles/about.css';
@@ -18,6 +19,11 @@ import Projects from './components/Projects';
 import UpcomingProjects from './components/UpcomingProjects'; // ✅ make sure this is imported
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
+
+<ScrollToTop />
+
+
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
